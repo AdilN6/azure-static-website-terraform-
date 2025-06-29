@@ -1,25 +1,48 @@
-# 🌐 Azure Static Website using Terraform
+# 🌐 Azure Static Website Deployment using Terraform
 
-This project demonstrates how to deploy a static HTML website to Azure using **Terraform** and **Azure Blob Storage (Static Website feature)**.
+This beginner-friendly project demonstrates how to provision and host a static website on **Azure Storage Account** using **Terraform**. It’s an excellent project to showcase your skills in Infrastructure as Code (IaC), Azure Cloud Services, and DevOps basics.
 
 ---
 
-## 🚀 Features
+## 🚀 Project Features
 
-- ✅ Azure Resource Group
-- ✅ Azure Storage Account with static website enabled
-- ✅ Upload `index.html` and `404.html`
-- ✅ Outputs public URL of your site
+- 🧱 Infrastructure as Code with Terraform
+- ☁️ Deploys Azure Resource Group and Storage Account
+- 🌐 Enables Static Website Hosting
+- 📂 Uploads `index.html` and `404.html` via CLI
+- ✅ Outputs a publicly accessible website URL
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Terraform provisioning
+- Azure CLI usage
+- Azure Storage configuration
+- Static hosting on the cloud
+- Modular and production-ready folder structure
 
 ---
 
 ## 📁 Project Structure
+
 azure-static-website-terraform/
-├── terraform/ # Terraform infrastructure code
-├── website/ # HTML files to host
-├── scripts/ # Upload script
+├── terraform/ # All Terraform IaC code
+│ ├── main.tf
+│ ├── variables.tf
+│ ├── outputs.tf
+│ └── terraform.tfvars
+│
+├── website/ # Website content
+│ ├── index.html
+│ └── 404.html
+│
+├── scripts/ # Deployment helpers
+│ └── upload.sh
+│
 ├── .gitignore
-├── README.md
-└── LICENSE
+├── LICENSE
+└── README.md
+
 
 
